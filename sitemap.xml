@@ -21,6 +21,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://deskrec.getwalksafe.co.uk/obs-alternative.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://deskrec.getwalksafe.co.uk/changelog.html</loc>
     <priority>0.5</priority>
   </url>
