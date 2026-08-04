@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://michael5565.github.io/deskrec-website/sitemap.xml
+Sitemap: https://deskrec.getwalksafe.co.uk/sitemap.xml
