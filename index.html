@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeskRec — Beautiful Windows screen recordings, effortlessly</title>
+  <meta name="description" content="DeskRec is a native Windows screen recorder with automatic zoom, cursor smoothing, annotations and a built-in editor. Create polished, professional recordings without editing." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236c5ce7'/%3E%3Cstop offset='1' stop-color='%238f7bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ================= NAV ================= -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo">D</span>DeskRec</a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#showcase">Showcase</a>
+        <a href="features.html">Details</a>
+        <a href="faq.html">FAQ</a>
+        <a href="changelog.html">Changelog</a>
+      </nav>
+      <a class="btn btn--primary nav-cta" href="download.html">Download</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu container">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#showcase">Showcase</a>
+      <a href="features.html">Details</a>
+      <a href="faq.html">FAQ</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="download.html">Download</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <span class="eyebrow">● Native Windows screen recorder · v0.1</span>
+      <h1>Beautiful screen recordings, straight from <span class="grad">Windows</span>.</h1>
+      <p class="sub">DeskRec automatically zooms, smooths your cursor and polishes highlights as you record — so your demos and tutorials look professionally produced the moment you stop.</p>
+      <div class="hero-cta">
+        <a class="btn btn--accent btn--lg" href="download.html">
+          Download for Windows
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#how-it-works">See how it works</a>
+      </div>
+      <p class="hero-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        Free trial · Windows 10 &amp; 11 · No watermark
+      </p>
+
+      <div class="hero-window">
+        <div class="window-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="title">DeskRec — New recording</span>
+        </div>
+        <div class="window-body">
+          <!-- Stylized product preview (pure CSS, lightweight placeholder) -->
+          <div style="display:grid;grid-template-columns:210px 1fr;gap:20px;">
+            <div style="display:grid;gap:10px;">
+              <div style="height:34px;border-radius:8px;background:#242836;display:flex;align-items:center;padding:0 14px;gap:10px;">
+                <span style="color:#8f7bff;font-size:15px;">●</span><span style="color:#9aa0b0;font-size:13px;">Full screen</span>
+              </div>
+              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
+                <span style="color:#8f7bff;font-size:15px;">▢</span><span style="color:#9aa0b0;font-size:13px;">Region</span>
+              </div>
+              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
+                <span style="color:#8f7bff;font-size:15px;">◎</span><span style="color:#9aa0b0;font-size:13px;">Window</span>
+              </div>
+              <div style="margin-top:8px;height:1px;background:#2a2f3f;"/>
+              <div style="font-size:12px;color:#5d6472;padding:4px 2px;">SOURCE</div>
+              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
+                <span style="color:#8f7bff;font-size:15px;">♪</span><span style="color:#9aa0b0;font-size:13px;">System audio</span>
+              </div>
+              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
+                <span style="color:#8f7bff;font-size:15px;">🎙</span><span style="color:#9aa0b0;font-size:13px;">Microphone</span>
+              </div>
+              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
+                <span style="color:#8f7bff;font-size:15px;">📷</span><span style="color:#9aa0b0;font-size:13px;">Webcam</span>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-rows:1fr auto;gap:14px;">
+              <div style="border-radius:10px;background-image:linear-gradient(135deg,#2a2f3f,#1c2030);border:1px solid #333a4c;display:grid;place-items:center;color:#4e5668;min-height:180px;">
+                <span style="font-size:13px;">Live preview · 60 FPS</span>
+              </div>
+              <div style="height:52px;border-radius:999px;background:#7c5cff;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;color:#fff;font-size:15px;">
+                ● RECORD
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="section section--soft" style="padding-block:64px;">
+    <div class="container stats">
+      <div class="stat"><div class="num">60<span>fps</span></div><div class="lbl">buttery-smooth capture</div></div>
+      <div class="stat"><div class="num">0<span>min</span></div><div class="lbl">to learn the editor</div></div>
+      <div class="stat"><div class="num">100<span>%</span></div><div class="lbl">native on Windows</div></div>
+      <div class="stat"><div class="num">&lt;1<span>GB</span></div><div class="lbl">lightweight install</div></div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES GRID ================= -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Features</span>
+        <h2>Everything you need for polished recordings</h2>
+        <p class="lead">DeskRec handles the fiddly parts of screen recording automatically, so you stay in flow.</p>
+      </div>
+      <div class="grid grid--3" style="margin-top:52px;">
+        <div class="card" data-reveal>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21H3" stroke-linecap="round"/><path d="M3 17l5-9 4 6 3-4 6 7H3z" stroke-linejoin="round"/></svg></div>
+          <h3>Automatic zoom</h3>
+          <p>Focus follows your actions. Movement or clicks smoothly zoom in on the right part of the screen, so viewers always see exactly what matters.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3l7.5 7.5M21 3l-7.5 7.5M3 21l7.5-7.5M21 21l-7.5-7.5" stroke-linecap="round"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg></div>
+          <h3>Cursor smoothing</h3>
+          <p>Write and draw in marker strokes directly on the recording. DeskRec highlights your actions with clean, elegant annotations.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M10 8v4l3 3" stroke-linecap="round"/></svg></div>
+          <h3>Built-in editor</h3>
+          <p>Trim, replay and fine-tune right after you stop the recording. Export a clean MP4 without ever opening another tool.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="9" cy="12" r="2" fill="currentColor"/><path d="M16 10h3M16 14h3" stroke-linecap="round"/></svg></div>
+          <h3>Webcam bubble</h3>
+          <p>Keep a floating webcam bubble on any part of the screen. A personal touch that helps your viewers connect with you.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg></div>
+          <h3>Countdown overlay</h3>
+          <p>An optional full-screen countdown gives you time to get ready before the camera starts rolling — nobody likes a rushed intro.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" stroke-linejoin="round"/></svg></div>
+          <h3>Distraction-free mode</h3>
+          <p>Hide desktop icons automatically while recording for a clean, professional frame. Your viewers see your work, not your clutter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section section--grad" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Record, and you're already done</h2>
+        <p class="lead">DeskRec was designed so the recording you end with is the recording you ship.</p>
+      </div>
+
+      <div class="feature-row" style="margin-top:56px;">
+        <div class="feature-media" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="14" height="12" rx="2"/><path d="M17 9l4-2v10l-4-2" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="feature-text">
+          <h3>1 · Pick your source &amp; go</h3>
+          <p class="sub">Choose a full screen, a single window, or a custom region. Toggle system audio, microphone and webcam in one glance.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>15, 30 or 60 FPS capture for the motion you need.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Optional countdown before recording starts.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Speaker notes saved with every clip that you can keep on screen.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-media" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 18l3 3 7-16" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6h5M4 10h4M15 14h5M15 18h3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="feature-text">
+          <h3>2 · DeskRec polishes as you record</h3>
+          <p class="sub">Auto-zoom, cursor smoothing and highlights are applied in real time — the magic happens while you talk, not after.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Automatic zoom that follows clicks and movement.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Distraction-free mode hides desktop clutter.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>A floating control pill lets you pause, resume or stop anytime.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-media" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12M8 11l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v3h16v-3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="feature-text">
+          <h3>3 · Review, then export MP4</h3>
+          <p class="sub">Open the built-in editor, replay your clip, and export a crisp MP4 ready for Slack, YouTube or your docs.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Playback and trimming built right into the flow.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Clean MP4 export — shareable anywhere.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Cross-platform-friendly output for your team.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOWCASE ================= -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Showcase</span>
+        <h2>Made for the paths you're already on</h2>
+        <p class="lead">Deployments of all kinds — smooth, zoomed-in captures that keep every viewer oriented.</p>
+      </div>
+      <div class="showcase-grid" style="margin-top:52px;">
+        <div class="shot" data-reveal>
+          <div class="media"></div>
+          <div class="cap"><b>Feature demos</b> · auto-zoom keeps the action centered while you narrate.</div>
+        </div>
+        <div class="shot" data-reveal>
+          <div class="media"></div>
+          <div class="cap"><b>Bug reports</b> · record the exact steps, ready to paste into your tracker.</div>
+        </div>
+        <div class="shot" data-reveal>
+          <div class="media"></div>
+          <div class="cap"><b>Tutorials</b> · clean, distraction-free frames with a webcam bubble.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="section section--soft" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Honest, simple pricing</h2>
+        <p class="lead">Start free. Upgrade when DeskRec feels like it's part of your workflow.</p>
+      </div>
+      <div class="pricing" style="margin-top:52px;">
+        <div class="plan" data-reveal>
+          <div class="name">Trial</div>
+          <div class="price">$0</div>
+          <div class="per">7 days · no card required</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Full feature set, unlocked</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Unlimited recordings</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>MP4 export</li>
+          </ul>
+          <a class="btn btn--ghost" href="download.html">Try it free</a>
+        </div>
+        <div class="plan plan--featured" data-reveal>
+          <span class="tag">Most popular</span>
+          <div class="name">Pro</div>
+          <div class="price">$49</div>
+          <small style="color:var(--muted);font-size:14px;">one-time</small>
+          <div class="per">lifetime license for Windows</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Everything in Trial</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>No watermark, forever</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Auto-updates &amp; priority support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Use on all your own PCs</li>
+          </ul>
+          <a class="btn btn--accent" href="download.html">Buy Pro — $49</a>
+        </div>
+        <div class="plan" data-reveal>
+          <div class="name">Team</div>
+          <div class="price">$149</div>
+          <small style="color:var(--muted);font-size:14px;">per 5 seats</small>
+          <div class="per">for teams &amp; companies</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>5 Pro licenses</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Central license management</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Volume pricing on more seats</li>
+          </ul>
+          <a class="btn btn--ghost" href="download.html">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq" data-single="true" style="margin-top:44px;">
+        <div class="faq-item">
+          <button class="faq-q">What is DeskRec? <span class="chev">▾</span></button>
+          <div class="faq-a">DeskRec is a native Windows screen recorder designed as a Screen Studio alternative. It records your screen with automatic zoom, cursor smoothing and annotations, then lets you review and export a clean MP4 — all in one app.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What's the difference between "record" and "auto-zoom"? <span class="chev">▾</span></button>
+          <div class="faq-a">With automatic zoom, DeskRec analyzes your clicks and mouse movement in real time and smoothly pans and zooms into the active area. Because this happens during recording, viewers always follow your actions — no manual editing required.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Does it need a graphics card or special hardware? <span class="chev">▾</span></button>
+          <div class="faq-a">No. DeskRec runs on any reasonably modern Windows 10 or 11 PC. It uses efficient native capture so it stays light on system resources while recording.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I record just a window or a region? <span class="chev">▾</span></button>
+          <div class="faq-a">Yes. You can record your full screen, a single window, or draw a custom region. You can also record system audio, your microphone, a webcam bubble, or any combination.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What format does it export? <span class="chev">▾</span></button>
+          <div class="faq-a">DeskRec exports standard MP4 files, so your recordings are playable just about anywhere — Slack, Teams, YouTube, Loom replacements, docs and more.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is there a free trial? <span class="chev">▾</span></button>
+          <div class="faq-a">Yes — you can try every feature free for 7 days, no credit card required. After that, choose a one-time Pro license or a Team plan.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <div class="cta">
+        <h2>Make your next recording look effortless.</h2>
+        <p>Download DeskRec for Windows and see how automatic zoom, cursor smoothing and a built-in editor turn a plain screencast into something you're proud to share.</p>
+        <div class="btn-wrap">
+          <a class="btn btn--primary btn--lg" href="download.html">Download DeskRec — it's free to try</a>
+          <a class="btn btn--ghost btn--lg" href="features.html">Explore all features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="logo">D</span>DeskRec</a>
+          <p class="about">A native Windows screen recorder with automatic zoom, cursor smoothing and a built-in editor. Beautiful recordings, effortlessly.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#how-it-works">How it works</a>
+          <a href="download.html">Download</a>
+          <a href="changelog.html">Changelog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="features.html">Feature details</a>
+          <a href="faq.html">FAQ</a>
+          <a href="index.html#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://github.com/Michael5565/deskrec" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/Michael5565/deskrec/releases" target="_blank" rel="noopener">Releases</a>
+          <a href="mailto:hello@deskrec.app">Email us</a>
+        </div>
+      </div>
+      <div class="legal">
+        <span>© 2025 DeskRec. All rights reserved.</span>
+        <span><span class="platform">win10 / win11</span> · Native Windows app</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
