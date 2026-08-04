@@ -61,39 +61,8 @@
           <span class="title">DeskRec — New recording</span>
         </div>
         <div class="window-body">
-          <!-- Stylized product preview (pure CSS, lightweight placeholder) -->
-          <div style="display:grid;grid-template-columns:210px 1fr;gap:20px;">
-            <div style="display:grid;gap:10px;">
-              <div style="height:34px;border-radius:8px;background:#242836;display:flex;align-items:center;padding:0 14px;gap:10px;">
-                <span style="color:#8f7bff;font-size:15px;">●</span><span style="color:#9aa0b0;font-size:13px;">Full screen</span>
-              </div>
-              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
-                <span style="color:#8f7bff;font-size:15px;">▢</span><span style="color:#9aa0b0;font-size:13px;">Region</span>
-              </div>
-              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
-                <span style="color:#8f7bff;font-size:15px;">◎</span><span style="color:#9aa0b0;font-size:13px;">Window</span>
-              </div>
-              <div style="margin-top:8px;height:1px;background:#2a2f3f;"/>
-              <div style="font-size:12px;color:#5d6472;padding:4px 2px;">SOURCE</div>
-              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
-                <span style="color:#8f7bff;font-size:15px;">♪</span><span style="color:#9aa0b0;font-size:13px;">System audio</span>
-              </div>
-              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
-                <span style="color:#8f7bff;font-size:15px;">🎙</span><span style="color:#9aa0b0;font-size:13px;">Microphone</span>
-              </div>
-              <div style="height:34px;border-radius:8px;background:#20242e;display:flex;align-items:center;padding:0 14px;gap:10px;">
-                <span style="color:#8f7bff;font-size:15px;">📷</span><span style="color:#9aa0b0;font-size:13px;">Webcam</span>
-              </div>
-            </div>
-            <div style="display:grid;grid-template-rows:1fr auto;gap:14px;">
-              <div style="border-radius:10px;background-image:linear-gradient(135deg,#2a2f3f,#1c2030);border:1px solid #333a4c;display:grid;place-items:center;color:#4e5668;min-height:180px;">
-                <span style="font-size:13px;">Live preview · 60 FPS</span>
-              </div>
-              <div style="height:52px;border-radius:999px;background:#7c5cff;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;color:#fff;font-size:15px;">
-                ● RECORD
-              </div>
-            </div>
-          </div>
+          <!-- Real DeskRec look: hand-crafted dark UI mockup of the new-recording screen -->
+          <img src="img/home-mockup.png" alt="DeskRec new-recording screen" style="width:100%;height:100%;object-fit:contain;display:block;" />
         </div>
       </div>
     </div>
@@ -163,7 +132,7 @@
 
       <div class="feature-row" style="margin-top:56px;">
         <div class="feature-media" data-reveal>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="14" height="12" rx="2"/><path d="M17 9l4-2v10l-4-2" stroke-linejoin="round"/></svg>
+          <img src="img/feature-sources.png" alt="Choose a screen, window, or custom region" loading="lazy" />
         </div>
         <div class="feature-text">
           <h3>1 · Pick your source &amp; go</h3>
@@ -178,7 +147,7 @@
 
       <div class="feature-row reverse">
         <div class="feature-media" data-reveal>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 18l3 3 7-16" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6h5M4 10h4M15 14h5M15 18h3" stroke-linecap="round"/></svg>
+          <img src="img/feature-zoom.png" alt="Automatic zoom follows your clicks" loading="lazy" />
         </div>
         <div class="feature-text">
           <h3>2 · DeskRec polishes as you record</h3>
@@ -193,7 +162,7 @@
 
       <div class="feature-row">
         <div class="feature-media" data-reveal>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12M8 11l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v3h16v-3" stroke-linecap="round"/></svg>
+          <img src="img/feature-editor.png" alt="Review a clip in the built-in editor" loading="lazy" />
         </div>
         <div class="feature-text">
           <h3>3 · Review, then export MP4</h3>
@@ -218,15 +187,15 @@
       </div>
       <div class="showcase-grid" style="margin-top:52px;">
         <div class="shot" data-reveal>
-          <div class="media"></div>
+          <div class="media"><img src="img/showcase-demo.png" alt="Feature demos with auto-zoom" loading="lazy" /></div>
           <div class="cap"><b>Feature demos</b> · auto-zoom keeps the action centered while you narrate.</div>
         </div>
         <div class="shot" data-reveal>
-          <div class="media"></div>
+          <div class="media"><img src="img/showcase-bug.png" alt="Bug report recording" loading="lazy" /></div>
           <div class="cap"><b>Bug reports</b> · record the exact steps, ready to paste into your tracker.</div>
         </div>
         <div class="shot" data-reveal>
-          <div class="media"></div>
+          <div class="media"><img src="img/showcase-tutorial.png" alt="Tutorial recording with webcam" loading="lazy" /></div>
           <div class="cap"><b>Tutorials</b> · clean, distraction-free frames with a webcam bubble.</div>
         </div>
       </div>
